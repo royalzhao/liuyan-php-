@@ -11,7 +11,7 @@ $content = $_POST['content'];
 
 mysql_select_db("message", $con);
 
-$sql = "insert into message values (null,'$name','$title','$content')";
+$sql = "insert into message(id,user,title,content) values (null,'$name','$title','$content')";
 
 mysql_query($sql);
 
